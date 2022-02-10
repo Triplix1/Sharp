@@ -3,9 +3,9 @@ using System.Linq;
 using System.Collections.Generic;
 using System;
 
-namespace test;
+namespace Events.Tests;
 
-public class UnitTest1
+public class StockEventsTests
 {
     [Fact]
     public void Test1()
@@ -79,7 +79,7 @@ public class UnitTest1
 
         private void Notify(decimal oldPrice, decimal newPrice)
         {
-            var email = $"Price for stock {stock.Symbol} changed {oldPrice} -> newPrice";
+            var email = $"Price for stock {stock.Symbol} changed {oldPrice} -> {newPrice}";
             //
         }
     }
